@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MusiTeach - Trouvez le prof de musique parfait</title>
+    <title>MusiTeach - Trouvez votre Professeur de Musique</title>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <style>
-        /* Personnalisation des couleurs */
+        /* 🎨 Personnalisation des couleurs */
         :root {
             --orange-vif: #FF6B00;
             --jaune-dore: #FFC300;
@@ -22,20 +22,20 @@
             --gris-anthracite: #333333;
         }
 
-        /* Dégradé sur le header */
+        /* 🌟 Dégradé Header */
         .header-gradient {
             background: linear-gradient(to right, var(--jaune-dore), var(--orange-vif));
             color: white;
         }
 
-        /* Boutons personnalisés */
+        /* 🚀 Boutons Modernes */
         .btn-primary {
             background: var(--orange-vif);
             border: none;
             color: white;
-            border-radius: 8px;
-            box-shadow: 0px 4px 10px rgba(255, 107, 0, 0.3);
-            transition: 0.3s ease-in-out;
+            border-radius: 10px;
+            padding: 12px 20px;
+            transition: all 0.3s ease-in-out;
         }
 
         .btn-primary:hover {
@@ -47,8 +47,8 @@
         .btn-outline-secondary {
             border: 2px solid var(--orange-vif);
             color: var(--orange-vif);
-            border-radius: 8px;
-            transition: 0.3s ease-in-out;
+            border-radius: 10px;
+            padding: 12px 20px;
         }
 
         .btn-outline-secondary:hover {
@@ -56,9 +56,9 @@
             color: white;
         }
 
-        /* Cartes avec hover effet */
+        /* 📌 Cartes Animées */
         .card {
-            border-radius: 10px;
+            border-radius: 12px;
             transition: all 0.3s ease-in-out;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
         }
@@ -68,19 +68,18 @@
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
         }
 
-        /* Pied de page */
+        /* 🔥 Pied de Page */
         .footer-bg {
             background: var(--gris-anthracite);
             color: white;
             padding: 20px 0;
         }
-
     </style>
 </head>
 <body class="bg-light">
 
-    <!-- Barre de Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light header-gradient">
+    <!-- 🚀 Barre de Navigation Moderne -->
+    <nav class="navbar navbar-expand-lg navbar-light header-gradient shadow">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#">MusiTeach</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -90,7 +89,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Accueil</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Professeurs</a></li>
-                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Comment ça marche</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Cours</a></li>
                     <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contact</a></li>
                 </ul>
                 <div class="ms-3">
@@ -101,19 +100,19 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 🎸 Hero Section Inspiré de Falcon -->
     <header class="py-5 text-center header-gradient">
         <div class="container">
-            <h1 class="fw-bold">Trouvez le prof de musique parfait en quelques clics</h1>
-            <p class="lead">Des cours personnalisés, des professeurs qualifiés, un apprentissage à votre rythme</p>
-            <a href="#" class="btn btn-light btn-lg text-dark fw-bold">S'inscrire maintenant</a>
+            <h1 class="fw-bold display-4">Apprenez la Musique avec les Meilleurs Professeurs</h1>
+            <p class="lead">Des cours personnalisés, des enseignants qualifiés, et un apprentissage interactif.</p>
+            <a href="#" class="btn btn-light btn-lg text-dark fw-bold">Rejoindre Maintenant</a>
         </div>
     </header>
 
-    <!-- Professeurs en vedette -->
+    <!-- 🎤 Professeurs en vedette -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center text-primary">Nos professeurs en vedette</h2>
+            <h2 class="text-center text-primary">Nos Professeurs de Musique</h2>
             <div class="row mt-4">
                 <div class="col-md-4">
                     <div class="card">
@@ -122,7 +121,7 @@
                             <h5 class="card-title fw-bold">Thomas D.</h5>
                             <p class="text-muted">Professeur de Guitare</p>
                             <div class="text-warning">★★★★★ (32 avis)</div>
-                            <a href="#" class="btn btn-outline-secondary mt-3">Voir profil</a>
+                            <a href="#" class="btn btn-outline-secondary mt-3">Voir Profil</a>
                         </div>
                     </div>
                 </div>
@@ -131,43 +130,11 @@
         </div>
     </section>
 
-    <!-- Pourquoi choisir MusiTeach -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center text-primary">Pourquoi choisir MusiTeach</h2>
-            <div class="row mt-4">
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-laptop fa-3x text-primary"></i>
-                    <h4 class="fw-bold mt-3">Cours en ligne ou en personne</h4>
-                    <p>Choisissez le format qui vous convient le mieux</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-calendar-alt fa-3x text-primary"></i>
-                    <h4 class="fw-bold mt-3">Planning flexible</h4>
-                    <p>Réservez vos cours selon votre disponibilité</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-star fa-3x text-primary"></i>
-                    <h4 class="fw-bold mt-3">Avis vérifiés</h4>
-                    <p>Des commentaires authentiques d'élèves satisfaits</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pied de page -->
+    <!-- 🚀 Pied de Page Inspiré de Falcon -->
     <footer class="footer-bg text-center">
         <div class="container">
             <p class="mb-2">© 2025 MusiTeach. Tous droits réservés.</p>
             <div>
                 <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
                 <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+                <a href
