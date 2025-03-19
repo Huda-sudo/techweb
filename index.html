@@ -5,40 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusiTeach - Trouvez le prof de musique parfait</title>
 
-    <!-- Intégration de Bootstrap 5 -->
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- FontAwesome pour les icônes -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+
     <style>
-        /* Personnalisation des couleurs Bootstrap */
+        /* Personnalisation des couleurs */
         :root {
-            --bs-primary: #FF6B00; /* Orange vif */
-            --bs-secondary: #FFC300; /* Jaune doré */
-            --bs-light: #FFFFFF; /* Blanc pur */
-            --bs-dark: #333333; /* Noir charbon */
+            --orange-vif: #FF6B00;
+            --jaune-dore: #FFC300;
+            --jaune-fonce: #FFB000;
+            --blanc-pur: #FFFFFF;
+            --orange-clair: #FFA833;
+            --gris-anthracite: #333333;
         }
+
+        /* Dégradé sur le header */
+        .header-gradient {
+            background: linear-gradient(to right, var(--jaune-dore), var(--orange-vif));
+            color: white;
+        }
+
+        /* Boutons personnalisés */
+        .btn-primary {
+            background: var(--orange-vif);
+            border: none;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(255, 107, 0, 0.3);
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background: var(--jaune-dore);
+            color: var(--gris-anthracite);
+            box-shadow: 0px 6px 12px rgba(255, 195, 0, 0.4);
+        }
+
+        .btn-outline-secondary {
+            border: 2px solid var(--orange-vif);
+            color: var(--orange-vif);
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn-outline-secondary:hover {
+            background: var(--orange-vif);
+            color: white;
+        }
+
+        /* Cartes avec hover effet */
+        .card {
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Pied de page */
+        .footer-bg {
+            background: var(--gris-anthracite);
+            color: white;
+            padding: 20px 0;
+        }
+
     </style>
 </head>
 <body class="bg-light">
 
     <!-- Barre de Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-light header-gradient">
         <div class="container">
-            <a class="navbar-brand fw-bold text-dark" href="#">MusiTeach</a>
+            <a class="navbar-brand fw-bold text-white" href="#">MusiTeach</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Accueil</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Professeurs</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Comment ça marche</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark fw-bold" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Professeurs</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Comment ça marche</a></li>
+                    <li class="nav-item"><a class="nav-link text-white fw-bold" href="#">Contact</a></li>
                 </ul>
                 <div class="ms-3">
-                    <a href="#" class="btn btn-outline-dark me-2">Connexion</a>
+                    <a href="#" class="btn btn-outline-secondary me-2">Connexion</a>
                     <a href="#" class="btn btn-primary">S'inscrire</a>
                 </div>
             </div>
@@ -46,7 +102,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="py-5 text-center bg-gradient" style="background: linear-gradient(to right, #FF6B00, #FFC300); color: white;">
+    <header class="py-5 text-center header-gradient">
         <div class="container">
             <h1 class="fw-bold">Trouvez le prof de musique parfait en quelques clics</h1>
             <p class="lead">Des cours personnalisés, des professeurs qualifiés, un apprentissage à votre rythme</p>
@@ -60,13 +116,13 @@
             <h2 class="text-center text-primary">Nos professeurs en vedette</h2>
             <div class="row mt-4">
                 <div class="col-md-4">
-                    <div class="card shadow">
+                    <div class="card">
                         <img src="images/teacher-1.jpg" class="card-img-top" alt="Professeur de guitare">
                         <div class="card-body text-center">
                             <h5 class="card-title fw-bold">Thomas D.</h5>
                             <p class="text-muted">Professeur de Guitare</p>
                             <div class="text-warning">★★★★★ (32 avis)</div>
-                            <a href="#" class="btn btn-outline-primary mt-3">Voir profil</a>
+                            <a href="#" class="btn btn-outline-secondary mt-3">Voir profil</a>
                         </div>
                     </div>
                 </div>
@@ -99,16 +155,8 @@
         </div>
     </section>
 
-    <!-- Appel à l'action -->
-    <section class="py-5 text-center bg-gradient" style="background: linear-gradient(to right, #FF6B00, #FFC300); color: white;">
-        <div class="container">
-            <h3 class="fw-bold">Prêt à commencer votre voyage musical ?</h3>
-            <a href="#" class="btn btn-light btn-lg text-dark fw-bold mt-3">Découvrir les professeurs</a>
-        </div>
-    </section>
-
     <!-- Pied de page -->
-    <footer class="py-4 bg-dark text-white text-center">
+    <footer class="footer-bg text-center">
         <div class="container">
             <p class="mb-2">© 2025 MusiTeach. Tous droits réservés.</p>
             <div>
